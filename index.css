@@ -51,4 +51,31 @@
       border: 1px solid #ccc;
     }
   }
- 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Link color */
+}
