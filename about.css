@@ -1,14 +1,24 @@
 body{
     background-color: beige;
+    display: flex;
 }
-.title{
+.about-section .title{
     font-weight:bold;
+    
 }
-
+.subtitle{
+    
+}
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .separator{
     
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 60px;
     width: 85px;
     height: 2px;
     background-color: #0b2138;
@@ -17,4 +27,12 @@ body{
 }
 img{
     border-radius: 50%;
+    
+        
+      
 }
+
+.about-section{
+    text-align: center;
+}
+
