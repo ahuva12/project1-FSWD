@@ -37,7 +37,7 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-.main-page {
+.middle-page {
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -55,6 +55,9 @@ figure {
 
 figcaption {
     margin-top: 10px;
+}
+img{
+  max-width: 100%;
 }
 
 
