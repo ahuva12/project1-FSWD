@@ -37,11 +37,13 @@ img{
       
 }
 
+
+
 .section h4{
     text-align: start;
 
 }
-
+/*I HAVE TO IT FLEX FOR SMALL SCREEN*/
 .form-container {
     width: 20%;
     margin: 0 auto; /* Center the form horizontally */
@@ -98,4 +100,26 @@ button {
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 5px;
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container-section-and-input {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .form-template-design {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    label {
+        font-size: 14px; /* Adjust font size for labels on smaller screens */
+    }
+
+    input {
+        font-size: 14px; /* Adjust font size for input fields on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Adjust font size for button on smaller screens */
+    }
 }
