@@ -76,8 +76,10 @@ nav {
     order: 1;
     width: 200px;
     height: 100px;
+    max-width: 100%;
 }
 .coursec .one-course .img-course .img{
+    max-width: 100%;
     border: 2px solid brown;
     position: relative;
     width: 100%;
@@ -114,7 +116,36 @@ nav {
     color: gold;
     margin: 5px;
 }
+.chef{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+    margin-right: 200px;
+    animation: rotate 5s infinite linear; /* זמן, סוג אנימציה, חזרות */
 
+}
+.chef img{
+    width: 200px;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .iframe {
     background-color: #66a59e;
     display: inline-flex;
@@ -149,7 +180,6 @@ nav {
     display: flex;
     align-items:center;
     text-align: center;
-    background-color: ;
     color: brown;
 }
 .move-next a:hover {
@@ -170,4 +200,3 @@ nav {
   #contact a:hover {
     color: #f503c5;
   }
-  
