@@ -1,24 +1,28 @@
 body{
     background-color: beige;
-    display: flex;
+    /*display: flex;*/
 }
 .about-section .title{
     font-weight:bold;
     
 }
-.subtitle{
-    
-}
-.table-container {
+.about-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Set the flex container to a column layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+     /* Center text within each element */
 }
+
+
+
+
+
 .separator{
     
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 60px;
+    margin-left: 0px;
     width: 85px;
     height: 2px;
     background-color: #0b2138;
@@ -27,12 +31,12 @@ body{
 }
 img{
     border-radius: 50%;
-    
         
       
 }
 
+/*
 .about-section{
     text-align: center;
-}
+}*/
 
