@@ -18,6 +18,7 @@ body{
 
 
 
+
 .separator{
     
     margin-top: 10px;
@@ -29,14 +30,72 @@ body{
     
 
 }
+
 img{
     border-radius: 50%;
         
       
 }
 
-/*
-.about-section{
-    text-align: center;
-}*/
+.section h4{
+    text-align: start;
 
+}
+
+.form-container {
+    width: 20%;
+    margin: 0 auto; /* Center the form horizontally */
+    overflow: hidden; /* Prevent content overflow in case of negative margin */
+    background-color: paleturquoise; /* Background color for the whole form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-section-and-input{
+    margin-left: 5px;
+}
+
+
+.form-title {
+    text-align: center;
+    background-color: aqua; /* Background color for the title section */
+    margin-top: 0;
+    padding-top: 10px; /* Adjust as needed */
+    border-top-left-radius: 8px; /* Rounded top-left corner */
+    border-top-right-radius: 8px; /* Rounded top-right corner */
+}
+
+.section {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+}
+.container-section-and-input .separator{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+}
+.important{
+    color: red;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
