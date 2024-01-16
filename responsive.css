@@ -1,10 +1,10 @@
 #title{
-    font-size: 35px;
+    font-size: 52px;
     color: #a2865e;
     text-align: center;    
 }
 #subtitle{
-    font-size: 20px;
+    font-size: 30px;
     color: #a2865e;
     text-align: center;
 }
@@ -18,17 +18,41 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: column;
+}
+.coursec .one-course .link1{
+    right: 0;
+
+}
+.coursec .one-course .rating{
+    right: 0;
 }
 .iframe{
     display: none;
 }
 .chef {
     position: relative;
+    animation: rotate 3.2s infinite linear; 
 }
 
 .chef img {
     position: absolute;
-    bottom: 20px;
-    width: 130px
+    left: 115px;
+    width: 70px
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-9deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }

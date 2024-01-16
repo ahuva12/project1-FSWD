@@ -1,5 +1,6 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:beige;
 }
 
 header nav .navigation .nav-list .nav-list-link {
@@ -70,10 +71,12 @@ nav {
 .coursec .one-course{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 .coursec .one-course .img-course{
-    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
     width: 200px;
     height: 100px;
     max-width: 100%;
@@ -87,34 +90,40 @@ nav {
 }
 
 .coursec .one-course .img-course .name-course{
-    order: 1;
     text-align: center;
     position: relative;
     bottom: 25px;
     font-size: 30px;
 }
 .coursec .one-course .list{
-    order: 2;
     list-style: none;
 }
 .coursec .one-course .link1{
-    order: 1;
     text-decoration: none;
     position: relative;
-    right: 37px;
-
+    right: 32px;
 }
 .coursec .one-course .rating{
-    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     right: 40px;
     position: relative;
     text-align: center;
-
 }
-.rating-star {
+.coursec .one-course .rating p{
+    font-size: 25px;
+    margin: 3px;
+}
+.rating-star1 .rating-star0{
     cursor: pointer;
+    margin: 2px;
+}
+.rating-star1{
     color: gold;
-    margin: 5px;
+}
+.rating-star0{
+    color: black;
 }
 .chef{
     display: inline-flex;
@@ -123,7 +132,7 @@ nav {
     flex-direction: column;
     float: right;
     margin-right: 200px;
-    animation: rotate 5s infinite linear; /* זמן, סוג אנימציה, חזרות */
+    animation: rotate 5s infinite linear; 
 
 }
 .chef img{
