@@ -1,0 +1,34 @@
+#title{
+    font-size: 35px;
+    color: #a2865e;
+    text-align: center;    
+}
+#subtitle{
+    font-size: 20px;
+    color: #a2865e;
+    text-align: center;
+}
+.coursec{
+    color: #66a59e;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.coursec .one-course{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.iframe{
+    display: none;
+}
+.chef {
+    position: relative;
+}
+
+.chef img {
+    position: absolute;
+    bottom: 20px;
+    width: 130px
+}
