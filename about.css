@@ -1,49 +1,50 @@
 body{
     background-color: beige;
-    /*display: flex;*/
+    
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0ee4c8; /* Set background color for the nav */
-    padding: 10px; /* Add some padding for better spacing */
-    height: 32px;
+    background-color: #0ee4c8; 
+    padding: 10px; 
   }
-  header nav ul li a {
+
+header nav ul li a {
     color: white;
   }
-  ul {
-    list-style-type: none;
-    margin: 0;
+
+ul{
+    list-style-type: none;/*remove the list style like the dot*/
     padding: 0;
-    display: flex; /* Use flex for the <ul> to align items horizontally */
+    display:flex;  /*flex align teh bar component horizontally*/
   }
+
   
-  li {
+li {
     margin-right: 20px; 
   }
   
-  a {
+a {
     text-decoration: none;
     color: #0ee4c8;
     font-weight: bold;
-    font-size: 16px;  
+    font-size: 16px;
+    
   }
   
-  a:hover {
+a:hover {
     color: #f503c5;
   }
 
-  .search {
+.search {
     padding: 8px;
     border: none;
     border-radius: 4px;
-    width: 178px;
-    position: relative;
-    top: 8px;
+    margin-left: auto; 
+    width: 180px;
   }
-  
+
 .about-section .title{
     font-weight:bold;
     
@@ -56,6 +57,7 @@ nav {
      /* Center text within each element */
 }
 
+
 .separator{
     
     margin-top: 10px;
@@ -64,8 +66,12 @@ nav {
     width: 85px;
     height: 2px;
     background-color: #0b2138;
+    display: none;
     
 
+}
+.important{
+    color: red;
 }
 
 img{
@@ -80,104 +86,46 @@ img{
     text-align: start;
 
 }
-/*I HAVE TO IT FLEX FOR SMALL SCREEN*/
+/* General styles for larger screens */
 .form-container {
-    width: 20%;
-    margin: 0 auto; /* Center the form horizontally */
-    overflow: hidden; /* Prevent content overflow in case of negative margin */
-    background-color: paleturquoise; /* Background color for the whole form */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.container-section-and-input{
-    margin-left: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Add border for larger screens */
+    padding: 20px;
+    background-color: #0ee4c8;
 }
 
 
-.form-title {
-    text-align: center;
-    background-color: aqua; /* Background color for the title section */
-    margin-top: 0;
-    padding-top: 10px; /* Adjust as needed */
-    border-top-left-radius: 8px; /* Rounded top-left corner */
-    border-top-right-radius: 8px; /* Rounded top-right corner */
-}
-
-.section {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 0px;
-}
-.container-section-and-input .separator{
-    margin-top: 2px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    width: 250px;
-    height: 2px;
-    background-color: black;
-}
-.important{
-    color: red;
-}
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.figure-audio{
-    background-color: paleturquoise;
-    position: relative;
-    top: 10px;
-}
-.figure-audio figcaption{
-    background-color: aqua;
-    text-align: center;
-}
-.audio{
-    position: relative;
-    left: 39.5%;
-    top: 2.2px;
-    background-color: #4caf50;
-}
-footer {
-    width: 100%;
-    height: 2rem;
-  }
-  
-/* Media query for smaller screens */
-@media only screen and (max-width: 600px) {
-    .container-section-and-input {
-        padding: 10px; /* Adjust padding for smaller screens */
+/* Styles for screens up to 500px wide */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 10px;
     }
 
-    .form-template-design {
-        padding: 10px; /* Adjust padding for smaller screens */
+    .form-title {
+        font-size: 1.5em;
+    }
+
+    .container-section-and-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section, .separator {
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-top: 10px;
     }
 
     label {
-        font-size: 14px; /* Adjust font size for labels on smaller screens */
+        font-size: 0.9em;
     }
 
-    input {
-        font-size: 14px; /* Adjust font size for input fields on smaller screens */
-    }
-
-    button {
-        font-size: 14px; /* Adjust font size for button on smaller screens */
+    input, button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
 }
