@@ -34,12 +34,11 @@ nav {
 .navigation .nav-list .nav-list-link:hover {
     color: #f503c5;
   }
-.navigation .search {
+.search {
     padding: 8px;
     border: none;
     border-radius: 4px;
   }
-
 #title{
     font-size: 70px;
     color: #a2865e;
