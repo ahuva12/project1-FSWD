@@ -144,6 +144,8 @@ button {
 
 .figure-audio{
     background-color: paleturquoise;
+    position: relative;
+    top: 10px;
 }
 .figure-audio figcaption{
     background-color: aqua;
